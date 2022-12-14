@@ -1,2 +1,4 @@
-# Init.Js
-Primeros pasos en código. 
+# Init.Developer
+
+Mis primeros pasos con código: HTML, CSS3 y JS.
+
