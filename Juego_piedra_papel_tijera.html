@@ -10,7 +10,24 @@
 
     <script>
 
+           
+        function aleatorio(min,max) {
+                return Math.floor(Math.random()*(max-min+1)+min);
+            }
+
         
+        function eleccion(jugada) {
+                let resultado = "";
+                 if(jugada == 1) {
+                    resultado = "🪨 Piedra ";
+                } else  if(jugada == 2) {
+                    resultado = "📄 Papel"
+                } else  if(jugada == 3) {
+                    resultado = "✂️ Tijera";
+                } else {
+                    resultado = "MAL ELEGIDO";
+                } return resultado
+        }
 
         // 1 es piedra,2 es papel, 3 es tijera
 
@@ -18,42 +35,10 @@
       
         jugador = prompt("Elige: 1 para piedra, 2 para papel o 3 para tijera");
 
-        
-
-            //ELECCION DEL JUGADOR
-
-                if(jugador == 1) {
-                    alert("Elegiste 🪨 Piedra ");
-                } else  if(jugador == 2) {
-                    alert("Elegiste 📄 Papel");
-                } else  if(jugador == 3) {
-                     alert("Elegiste ✂️ Tijera");
-                } else {
-                    alert("Elegiste otra cosa, asi no puedes jugar! 🙄");
-                }
-
-            //ELECCION PC
-
-                 // n= Math.floor(Math.random()*(max-min+1)+min)
-                 //min=1 
-                //max=3
-            
-            
-            function aleatorio(min,max) {
-                return Math.floor(Math.random()*(max-min+1)+min);
-            }
-
-                let pc = aleatorio(1,3)
-
-                if(pc == 1) {
-                    alert("La máquina eligió 🪨 Piedra ");
-                } else  if(pc == 2) {
-                    alert("La máquina eligió 📄 Papel");
-                } else  if(pc == 3) {
-                    alert("La máquina eligió ✂️ Tijera");
-                } else {
-                    alert("Cometí un error programando la eleccion de la máquina");
-                }
+            alert("PC elige: " + eleccion(pc));
+            alert("Tu eliges: " + eleccion(jugador))
+ 
+           
 
             //COMBATE
 
