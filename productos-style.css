@@ -1,0 +1,106 @@
+
+html{
+    font-size: 70%;
+    font-family: 'Roboto', sans-serif;
+}
+
+/**Encabezado */
+
+header  {
+    background: linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 0%, rgba(255,255,255,0.5) 0%, rgba(9,9,121,0.70) 25%, rgba(255,255,255,0.5) 50%, rgba(252,252,252,1) 50%, rgba(186,9,5,1) 75%, rgba(255,255,255,0.5) 100%);
+    padding: 20px 0;   
+}
+
+.caja {
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+nav li  {
+    display: inline;
+    margin:0 0 0 15px;
+}
+
+nav a{
+    text-transform: uppercase; 
+    /*!coloca el texto en mayuscula*/
+    color: black;
+    font-weight: bold;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: rgb(255, 255, 255);
+    text-shadow:2px 2px 3px #0e019cf9;
+    transition: 300ms;
+}
+
+/**Lista de productos*/
+
+.productos {
+    width: 940px;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+.productos li {
+    display: inline-block;
+    text-align: center;
+    width: 30%;
+    vertical-align:top;
+    margin: 0 1.5%;
+    padding: 30px 10px;
+    box-sizing: border-box;
+    border: 2px solid #bbbbbb;
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px 5px #5d494986;
+}
+
+.productos li:hover {
+    border: 3px solid #0800ff;
+    box-shadow: 5px 5px 15px #fc2a62aa;
+}
+
+.productos li:active {
+    border: 2px solid rgb(63, 255, 127);
+}
+
+/**Titulos de los productos */
+
+.productos h2 {
+    font-size: 2rem;
+    font-weight: bold;
+}
+.productos:hover h2 {
+    font-size: 2.5rem;
+}
+
+.producto-descripcion {
+    font-size: 1.3rem;
+}
+
+.precio {
+    font-size: 2rem;
+    font-weight: bold;
+    margin-top: 10px;
+}
+
+/* *Pie de pagina */
+
+footer {
+    text-align: center;
+    background:url(imagenes/bg.jpg);
+    padding: 20px;
+}
+
+.copyright {
+    color: white;
+    margin: 20px;
+}
