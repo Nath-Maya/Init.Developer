@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bandera Capitan America</title>
+</head>
+<body>
+     
+    <!-- Etiqueta para realizar dibujos, solo tiene dos atributos widht y heigth -->
+    
+    <canvas width="600" height="400"></canvas>
+ 
+        <script>
+            var pantalla = document.querySelector("canvas");
+            var pincel = pantalla.getContext("2d");
+
+            // fillRect dibuja un rectangulo relleno en a posicion x , y
+
+            pincel.fillStyle = "Lightgray"; //propiedad
+            pincel.fillRect(0,0,600,400); //funcion donde el primer parametro es el eje x (horizontal) y eje y (vertical), los dos siguientes son los tamaños
+        
+        //Flag
+
+           pincel.fillStyle = "blue"; 
+             pincel.fillRect(0,0,600,200); 
+             
+
+
+
+            pincel.fillStyle = "red"; 
+             pincel.fillRect(0,200,600,200); 
+
+        //circulos - Circle
+
+        pincel.fillStyle = "red";
+                pincel.beginPath();
+                pincel.arc(300,210,150,0,2*3.1416);
+                pincel.shadowColor="black";
+                pincel.shadowBlur= 20;
+                pincel.fill();
+
+        pincel.fillStyle = "white";
+                pincel.beginPath();
+                pincel.arc(300,210,130,0,2*3.1416);
+                pincel.fill();
+
+        pincel.fillStyle = "red";
+                pincel.beginPath();
+                pincel.arc(300,210,110,0,2*3.1416);
+                pincel.fill();
+
+            pincel.fillStyle = "blue";
+                pincel.beginPath();
+                pincel.arc(300,210,90,0,2*3.1416);
+                pincel.fill();
+
+
+        // Star
+
+           pincel.fillStyle = "white";
+            pincel.beginPath(); //le indico que voy a inicar un camino
+
+            pincel.moveTo(300,150); // le indico la ubicacion inicial
+            // Le indico de donde inicio la linea teniendo en cuenta la coordenada de move to
+                 //punta superior - top tip
+                 pincel.lineTo(280,200);
+                 pincel.lineTo(320,200);
+            
+            pincel.moveTo(360,200);
+               //punta derecha central - center right tip
+                pincel.lineTo(300,200);
+                pincel.lineTo(300,240);
+
+            pincel.moveTo(240,200);
+                //punta izquiera central - center left tip
+                pincel.lineTo(300,200);
+                pincel.lineTo(300,240);
+                     
+            pincel.moveTo(340,270);
+                //punta derecha inferior - bottom right tip
+                pincel.lineTo(320,200);
+                pincel.lineTo(300,240);
+
+            pincel.moveTo(260,270);
+                //punta izquiera inferior - bottom left tip
+                pincel.lineTo(280,200);
+                pincel.lineTo(300,240);
+
+                pincel.fill();
+            
+        </script>
+
+
+</body>
+</html>
