@@ -1,0 +1,121 @@
+html{
+    font-size: 70%;
+    font-family: 'Roboto', sans-serif;
+}
+
+/**Encabezado */
+
+header  {
+    background: linear-gradient(135deg, rgba(255,255,255,1) 0%, rgba(255,255,255,1) 0%, rgba(255,255,255,0.5) 0%, rgba(9,9,121,0.70) 25%, rgba(255,255,255,0.5) 50%, rgba(252,252,252,1) 50%, rgba(186,9,5,1) 75%, rgba(255,255,255,0.5) 100%);
+    padding: 20px 0;   
+}
+
+.caja {
+    width: 940px;
+    position: relative;
+    margin: 0 auto;
+}
+nav {
+    position: absolute;
+    top: 110px;
+    right: 0;
+}
+
+nav li  {
+    display: inline;
+    margin:0 0 0 15px;
+}
+
+nav a{
+    text-transform: uppercase; 
+    /*!coloca el texto en mayuscula*/
+    color: black;
+    font-weight: bold;
+    font-size: 2rem;
+    text-decoration: none;
+}
+
+nav a:hover {
+    color: rgb(255, 255, 255);
+    text-shadow:2px 2px 3px #0e019cf9;
+    transition: 300ms;
+}
+
+/* *Pie de pagina */
+
+footer {
+    text-align: center;
+    background:url(imagenes/bg.jpg);
+    padding: 20px;
+}
+
+.copyright {
+    color: white;
+    margin: 20px;
+}
+
+/* *Elementos del formulario */
+
+main {
+    width: 940px;
+    margin: 0 auto;
+}
+
+form {
+    margin: 40px 0;
+}
+
+form label, form legend {
+    display: block;
+    font-size: 1.5rem;
+    margin: 10px 0 0 10px;
+    padding: 5px;
+}
+
+.input-padron {
+    display: block;
+    margin: 0 0 20px;
+    padding: 10px 25px;
+    width: 50%;
+}
+
+.checkbox {
+    margin: 20px 5px;
+}
+
+.enviar {
+    width: 40%;
+    padding: 15px 0;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    border: none;
+    background: orange;
+    border-radius: 10px;
+    transition: 1s all;
+    cursor:pointer;
+}
+
+.enviar:hover {
+    background: orangered;
+    transform: scale(1.2);
+}
+
+table {
+    margin: 40px 40px;
+}
+
+thead {
+    background: #555555;
+    color: aliceblue;
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+td,th {
+    border:1px solid #000000;
+    padding: 10px 10px;
+}
+
+
+
