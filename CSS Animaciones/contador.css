@@ -1,0 +1,14 @@
+h3 {
+    font-family:Arial, Helvetica, sans-serif
+}
+
+
+body{
+    counter-reset: game;
+}
+input:checked {
+    counter-increment: game;
+}
+.Total-counter::after {
+    content: counter(game);
+}
