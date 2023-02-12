@@ -1,0 +1,80 @@
+body {
+   font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+.ejercicios {
+   background-color: aquamarine;
+   border: 5px solid blue;
+}
+
+.item {
+   border: 3px solid  red;
+   font-size: 4rem;
+}
+
+.contenedor-grid-rows {
+   display: grid;
+   grid-template-rows: 150px 250px;
+   /* espacio entre filas*/
+   row-gap: 10px;
+}
+
+.contenedor-grid-column {
+   display: grid;
+   grid-template-columns: 100px 200px 300px;
+   column-gap: 10px;
+}
+
+.contenedor-grid-autoflow {
+   display: grid;
+   grid-auto-flow: column;
+   /* mismo espacio entre todo */
+   gap: 20px;
+}
+
+/*!RETO */
+
+
+.contenedor-reto {
+   display: grid;
+   /* cantidad de columnas */
+   grid-template-columns: 150px 150px;
+   /* cantidad filas */
+   grid-template-rows: 150px 150px 150px;
+   /* crear columnas */
+   grid-auto-flow: column;
+   grid-gap: 20px;
+}
+
+.item-reto-fila1 {
+   background-color: #95da3b;
+   display: flex;
+   justify-content: flex-end;
+   align-items: flex-end;
+}
+
+.item-reto-fila2 {
+   background-color: #3cc538;
+   display: flex;
+   justify-content: flex-end;
+   align-items: flex-end;
+}
+
+.item-reto-fila3 {
+   background-color: #1d8b19;
+   display: flex;
+   justify-content: flex-end;
+   align-items: flex-end;
+}
+
+
+div p {
+   background-color: #203603;
+   color: white;
+   font-size: 1.5rem;
+   font-weight: bold;
+   text-align: center;
+   width: 1.5rem;
+   height: 1.5rem;
+   margin: 0;
+}
