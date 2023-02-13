@@ -46,4 +46,9 @@ section div {
    height: 600px;
 }
 
-
+.flex-container-grow {
+   display: flex;
+}
+.flex-item {
+   flex-grow: 3;
+}
