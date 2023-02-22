@@ -1,26 +1,45 @@
 
-.container {
-   border: 5px solid blueviolet;
-   background-color: rgb(242, 245, 242);
+.contenedor {
+   border: 5px solid #e1bee7;
+   background-color: white;
    display: grid;
-   gap: 15px;
-   grid-template-columns: 150px 150px;
-   grid-auto-rows: 150px 150px;
-   height: 600px;
-}
-
-.item {
-   border: 5px solid rgb(9, 255, 0);
-   font-size: 4rem;
-   background-color: green;
-   color: white;
-}
-
-.container {
+   /* indico la cantidad de columnas y filas */
+   grid-template-columns: 150px 150px 150px;
+   grid-template-rows: 75px 75px 75px;
+   /* a cada cuadrante le damos el nombre del elemento que alli queremos ubicar */
+   grid-template-areas: 
+      'header header header'
+      'side main main'
+      'side main main';
    place-content: center;
 }
-
 .item {
-   display: grid;
-   place-items: end;
+   font-size: 4rem;
 }
+
+/* !HEADER */
+
+
+.item-1 {
+   border: 5px solid #f8bbd0;
+   background-color: #ffeeff;
+   /* en cada item asignamos el nombre del area*/
+   grid-area: header;
+   
+}
+.item-2 {
+   border: 5px solid #e1bee7;
+   background-color: #fff1ff;
+   
+   grid-area: side;
+}
+.item-3 {
+   border: 5px solid #b2ebf2;
+   background-color: #e5ffff;
+
+   grid-area: main;
+}
+
+
+
+
