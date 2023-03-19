@@ -2,7 +2,7 @@
 
 const ciudadesDisponibles = new Array("Bogota","Lima","Santiago","Montevideo");
 const precioCiudad = new Array(500,400,380,200);
-const presupuestoDisponible = 310;
+const presupuestoDisponible = 250;
 
 let i = 0;
 
